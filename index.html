@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Shodiyor!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="locked">
+    <div id="intro-screen" class="screen active">
+        <div class="gift-box" id="open-gift-btn">
+            <div class="lid"></div>
+            <div class="box"></div>
+            <div class="bow"></div>
+            <p class="click-text">Tap to open your present</p>
+        </div>
+    </div>
+
+    <div id="main-screen" class="screen">
+        <div class="confetti-container" id="confetti"></div>
+        <div class="glass-card">
+            <h1 class="title">Happy 20th Birthday!</h1>
+            <h2 class="name">Shodiyor Sharofiddinov</h2>
+            <div class="divider"></div>
+            <p class="message">
+                Wishing you the most amazing birthday! It's been a year since you moved to Korea to study, and I'm incredibly proud of everything you're achieving. Keep shining, keep learning, and enjoy your special day to the fullest!
+            </p>
+            <p class="signature">- From your friend</p>
+            
+            <div class="korea-theme">
+                <span class="emoji">🇰🇷</span>
+                <span class="emoji">🎉</span>
+                <span class="emoji">🎂</span>
+            </div>
+
+            <!-- Media Gallery -->
+            <div class="gallery">
+                <h3 class="gallery-title">Memories together ✨</h3>
+                <div class="media-grid">
+                    <img src="photo_2025-03-18_19-00-51.jpg" alt="Memory with Shodiyor" class="gallery-img">
+                    <img src="photo_2025-03-18_19-01-08.jpg" alt="Another Memory" class="gallery-img">
+                </div>
+                <div class="video-wrapper">
+                    <video controls class="gallery-video">
+                        <source src="video_2026-06-06_19-52-41.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container" style="display: none;">
+            <!-- Background music using YouTube -->
+            <iframe id="bg-music" width="0" height="0" src="" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
