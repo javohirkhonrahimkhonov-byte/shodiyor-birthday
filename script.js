@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Allow scrolling on the body
             document.body.classList.remove('locked');
             
-            // Start playing the background music via exact youtube video ID
-            bgMusic.src = "https://www.youtube.com/embed/Lp2riL9OyCY?autoplay=1&loop=1&playlist=Lp2riL9OyCY&allow=autoplay";
+            // Start playing the background music via exact youtube video ID from 20s
+            bgMusic.src = "https://www.youtube.com/embed/Lp2riL9OyCY?autoplay=1&loop=1&playlist=Lp2riL9OyCY&allow=autoplay&start=20";
 
             // Trigger confetti
             createConfetti();
