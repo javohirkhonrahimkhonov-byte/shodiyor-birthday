@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Allow scrolling on the body
             document.body.classList.remove('locked');
             
-            // Start playing the background music via youtube search list
-            bgMusic.src = "https://www.youtube.com/embed?listType=search&list=Jahongir+Otajonov+Happy+Birthday&autoplay=1&loop=1";
+            // Start playing the background music via exact youtube video ID
+            bgMusic.src = "https://www.youtube.com/embed/Lp2riL9OyCY?autoplay=1&loop=1&playlist=Lp2riL9OyCY&allow=autoplay";
 
             // Trigger confetti
             createConfetti();
