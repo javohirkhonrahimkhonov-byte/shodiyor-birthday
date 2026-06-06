@@ -52,11 +52,13 @@
         </div>
 
         <div class="video-container">
-            <!-- Background music using YouTube -->
-            <iframe id="bg-music" style="width: 1px; height: 1px; opacity: 0; position: absolute; pointer-events: none;" src="" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            <!-- Background music using YouTube API -->
+            <div id="yt-player" style="position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none;"></div>
         </div>
     </div>
 
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,8 +1,26 @@
+let ytPlayer;
+
+function onYouTubeIframeAPIReady() {
+    ytPlayer = new YT.Player('yt-player', {
+        height: '1',
+        width: '1',
+        videoId: 'Lp2riL9OyCY',
+        playerVars: {
+            'autoplay': 0,
+            'controls': 0,
+            'disablekb': 1,
+            'fs': 0,
+            'loop': 1,
+            'playlist': 'Lp2riL9OyCY',
+            'start': 20
+        }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const introScreen = document.getElementById('intro-screen');
     const mainScreen = document.getElementById('main-screen');
     const giftBox = document.getElementById('open-gift-btn');
-    const bgMusic = document.getElementById('bg-music');
     const confettiContainer = document.getElementById('confetti');
 
     let opened = false;
@@ -24,8 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // Allow scrolling on the body
             document.body.classList.remove('locked');
             
-            // Start playing the background music via exact youtube video ID from 20s
-            bgMusic.src = "https://www.youtube.com/embed/Lp2riL9OyCY?autoplay=1&loop=1&playlist=Lp2riL9OyCY&allow=autoplay&start=20";
+            // Start playing the background music via youtube API exactly at 20 seconds
+            if (ytPlayer && typeof ytPlayer.playVideo === 'function') {
+                ytPlayer.seekTo(20);
+                ytPlayer.playVideo();
+            }
 
             // Trigger confetti
             createConfetti();
