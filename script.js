@@ -4,15 +4,15 @@ function onYouTubeIframeAPIReady() {
     ytPlayer = new YT.Player('yt-player', {
         height: '1',
         width: '1',
-        videoId: 'Lp2riL9OyCY',
+        videoId: 'srl3t-g0Mfs',
         playerVars: {
             'autoplay': 0,
             'controls': 0,
             'disablekb': 1,
             'fs': 0,
             'loop': 1,
-            'playlist': 'Lp2riL9OyCY',
-            'start': 20
+            'playlist': 'srl3t-g0Mfs',
+            'start': 0
         }
     });
 }
@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Allow scrolling on the body
             document.body.classList.remove('locked');
             
-            // Start playing the background music via youtube API exactly at 20 seconds
+            // Start playing the background music via youtube API
             if (ytPlayer && typeof ytPlayer.playVideo === 'function') {
-                ytPlayer.seekTo(20);
+                ytPlayer.seekTo(0);
                 ytPlayer.playVideo();
             }
 
